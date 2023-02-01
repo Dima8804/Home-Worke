@@ -5,19 +5,19 @@
 //78 -> третьей цифры нет
 
 //32679 -> 6
+Console.WriteLine("Put number");
+int a =int.Parse(Console.ReadLine());
 
-int a = new Random().Next(0,9999);
-
-if(a <= 99 )
+if(a > 0 & a < 99 )
 {
     Console.WriteLine($"{a}-> dont have number");
 }
-if(a <= 999)
+if(a > 100 & a < 999)
 {
     int c = a % 10;
     Console.WriteLine($"{a} -> {c}");
 }
-if(a <= 9999)
+if(a > 1000 & a < 9999)
 {
     int b = a / 10;
     int d = b % 10;
